@@ -1,37 +1,54 @@
-# PassGen - Command Line Password Generator
+# GimmiePass - Command Line Password Generator
 
-Introducing PassGen, a simple password generator tool made in Rust, born out of the necessity for effortless security.
+Introducing GimmiePass, (short for give me password) a simple password generator tool made in Rust, born out of the necessity for effortless security (and to learn the language).
 
 ## Usage
 
 ```
-pass_gen [password length] [y/n for numbers] [y/n for special chars] [y/n for caps]
+gimmiepass [password length] [y/n for numbers] [y/n for special chars] [y/n for caps]
 ```
 
 If no fields are specified, the tool will generate a password using all available character types.
 
+---
 ## Examples
 
-Generate a 12-character password with numbers, special characters, and capital letters:
+### 20-character password with numbers, special chars, and capital letters:
 
 ```sh
-pass_gen 12 y y y
+$ gimmiepass 20
+
+]vSEW£vzO)0XOI]|yNSO
 ```
 
-Or create a 30-character password with numbers and capital letters:
+### or
 
 ```sh
-pass_gen 30 y n y
+$ gimmiepass 20 y y y
+
+£O=]RcPuOZib1abd7fgj
 ```
 
-## Assistance
+### 30-character password with numbers and capital letters:
+
+```sh
+$ gimmiepass 30 y n y
+
+9icpuMM9oq2CXPEdI2v9p2dfTa2A5b
+```
+
+---
+
+## HELP!
 
 To view a help message, enter:
 
 ```sh
-pass_gen -h
+$ gimmiepass -h
 ```
 
-## Note
+---
+
+## Security
 
 Rest assured, no passwords are stored or recorded, I dont even remember what I had for lunch yesterday. 

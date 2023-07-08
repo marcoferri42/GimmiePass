@@ -1,5 +1,5 @@
 [package]
-name = "passgen"
+name = "gimmiepass"
 version = "0.1.0"
 authors = ["Marco Ferri <marcoferri462@gmail.com>"]
 license = "MIT OR Apache-2.0"
