@@ -1,8 +1,12 @@
+use std::env;
 extern crate colored;
 use colored::Colorize;
 extern crate rand;
 use rand::Rng;
-use std::env;
+extern crate clipboard;
+use clipboard::ClipboardProvider;
+use clipboard::ClipboardContext;
+
 
 // command line password generator tool      
 // syntax: passGen -numberOfChars -y/n numbers -y/n specialChars
@@ -47,7 +51,18 @@ fn go(args:Vec<String>){
 
     let generated:String = generator(*pw_length, *numbers, *special, *caps);
     
-    println!("{}", generated.truecolor(102, 31, 179));
+    println!("{}", generated.white().bold());
+    
+    if pw_length <= &1000 {
+        let mut ctx: ClipboardContext = ClipboardProvider::new().unwrap();
+        ctx.set_contents(generated.to_owned()).unwrap();
+        let _ = ctx.get_contents(); // apparently ctx lib works only if this is here
+        
+        println!("{} password has been copied to clipboard.", "☑".green());
+    } else {
+        println!("{} password was too long to be safely copied to clipboard.", "⚠".yellow());
+    }
+    
 }
 
 

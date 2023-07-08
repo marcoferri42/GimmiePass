@@ -2,6 +2,10 @@
 
 Introducing GimmiePass, a simple password generator tool made in Rust 🦀, born out of the necessity for effortless security (and to learn the language).
 
+## Features
+
+- Generated password gets copied straight in your clipboard! (rust-clipboard crate)
+- Customize the chars used in your password generation!
 ## Usage
 
 ```
