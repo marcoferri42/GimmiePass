@@ -1,4 +1,6 @@
+extern crate colored;
 use colored::Colorize;
+extern crate rand;
 use rand::Rng;
 use std::env;
 
