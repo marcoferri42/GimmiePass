@@ -1,11 +1,11 @@
-# GimmiePass - Command Line Password Generator
+# GimmiePass ⚿ - Command Line Password Generator
 
-Introducing GimmiePass, (short for give me password) a simple password generator tool made in Rust, born out of the necessity for effortless security (and to learn the language).
+Introducing GimmiePass, a simple password generator tool made in Rust 🦀, born out of the necessity for effortless security (and to learn the language).
 
 ## Usage
 
 ```
-gimmiepass [password length] [y/n for numbers] [y/n for special chars] [y/n for caps]
+$ gimmiepass [password length] [y/n for numbers] [y/n for special chars] [y/n for caps]
 ```
 
 If no fields are specified, the tool will generate a password using all available character types.
