@@ -29,7 +29,7 @@ fn print_help() {
     let help = format!(
         "{}\n{}\n{}",
         "Thank you for using GimmiePass!".truecolor(89, 111, 98).bold(),
-        "Usage: pass_gen [length of password] [y/n use numbers] [y/n use special chars] [y/n use caps]".white().bold(),
+        "Usage: gimmiepass [length of password] [y/n use numbers] [y/n use special chars] [y/n use caps]".white().bold(),
         "Leave all fields empty for default: all active.".truecolor(89, 111, 98).bold(),
     );
     println!("{}", help);
