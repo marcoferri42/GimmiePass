@@ -8,8 +8,7 @@ use clipboard::ClipboardProvider;
 use clipboard::ClipboardContext;
 
 
-// command line password generator tool      
-// syntax: passGen -numberOfChars -y/n numbers -y/n specialChars
+// CLI password generator tool
 fn main() {
     let mut args: Vec<String> = env::args().collect();
 
