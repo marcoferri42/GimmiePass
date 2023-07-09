@@ -5,7 +5,7 @@ authors = ["Marco Ferri <marcoferri462@gmail.com>"]
 license = "MIT OR Apache-2.0"
 description = "A simple command line password generator tool made in Rust."
 readme = "README.md"
-repository = "https://github.com/marcoferri42/passGen"
+repository = "https://github.com/marcoferri42/gimmiepass"
 keywords = ["rust", "cli", "password-generator", "password"]
 categories = ["command-line-utilities"]
 
